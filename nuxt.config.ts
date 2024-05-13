@@ -7,6 +7,10 @@ export default defineNuxtConfig({
   modules: ["@nuxtjs/tailwindcss", "@nuxt/image"],
   app: {
     head: {
+      htmlAttrs: {
+        lang: "en",
+        dir: "ltr",
+      },
       title: "Nuxt Dojo",
       meta: [
         { charset: "utf-8" },
