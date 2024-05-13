@@ -2,7 +2,13 @@
   <div class="card">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
       <div class="md:py-7">
-        <img :src="product.image" alt="product thumb" class="mx-auto my-7" />
+        <NuxtImg
+          :src="product.image"
+          alt="product thumb"
+          class="mx-auto my-7"
+          width="400px"
+          format="webp"
+        />
       </div>
 
       <div class="px-7">
