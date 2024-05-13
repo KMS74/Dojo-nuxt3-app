@@ -4,8 +4,7 @@
       :src="product.image"
       alt="product thumb"
       class="thumb"
-      width="100px"
-      height="120px"
+      sizes="100vw sm:50vw md:400px"
       format="webp"
     />
     <div class="card__content">

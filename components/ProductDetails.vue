@@ -6,7 +6,7 @@
           :src="product.image"
           alt="product thumb"
           class="mx-auto my-7"
-          width="400px"
+          sizes="100vw sm:50vw md:400px"
           format="webp"
         />
       </div>
