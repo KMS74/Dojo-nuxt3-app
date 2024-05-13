@@ -1,9 +1,16 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  image: {
+    domains: ["fakestoreapi.com"],
+  },
   devtools: { enabled: true },
-  modules: ["@nuxtjs/tailwindcss"],
+  modules: ["@nuxtjs/tailwindcss", "@nuxt/image"],
   app: {
     head: {
+      htmlAttrs: {
+        lang: "en",
+        dir: "ltr",
+      },
       title: "Nuxt Dojo",
       meta: [
         { charset: "utf-8" },

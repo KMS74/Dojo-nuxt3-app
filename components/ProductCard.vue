@@ -1,6 +1,12 @@
 <template>
   <div class="card text-center">
-    <img :src="product.image" alt="product thumb" class="thumb" />
+    <NuxtImg
+      :src="product.image"
+      alt="product thumb"
+      class="thumb"
+      sizes="100vw sm:50vw md:400px"
+      format="webp"
+    />
     <div class="card__content">
       <p class="font-bold text-gray-500 truncate">{{ product.title }}</p>
       <NuxtLink class="btn" :to="`/products/${product.id}`">
