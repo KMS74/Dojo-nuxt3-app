@@ -5,8 +5,12 @@
         <NuxtImg
           :src="product.image"
           alt="product thumb"
-          class="mx-auto my-7"
-          sizes="100vw sm:50vw md:400px"
+          class="mx-auto"
+          width="400"
+          height="500"
+          sizes="(max-width: 400px) 100vw, 400px"
+          :placeholder="[400, 500, 75, 5]"
+          fit="fill"
           format="webp"
         />
       </div>
