@@ -3,8 +3,13 @@
     <NuxtImg
       :src="product.image"
       alt="product thumb"
-      class="thumb"
-      sizes="100vw sm:50vw md:400px"
+      class="mx-auto"
+      width="150"
+      height="200"
+      sizes="(max-width: 150px) 100vw, 150px"
+      :placeholder="[150, 200, 75, 5]"
+      loading="lazy"
+      fit="fill"
       format="webp"
     />
     <div class="card__content">
